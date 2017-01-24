@@ -1,0 +1,10 @@
+{
+   "apiToken": "xoxb-95176950242-cI2MPysci1pZCSikeisawesome",
+   "channel": "#interwebs",
+   "warningPing": 300,
+   "stdDevPing": false,
+   "numberOfRequests": 5000,
+   "timeout": 10,
+   "host": "google.com",
+   "cron" : "*/5 * * * *"
+}

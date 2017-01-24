@@ -1,0 +1,9 @@
+{
+   "name": "canary",
+      "version" : "0.0.1",
+      "dependencies": {
+         "ping": "danielzzz/node-ping#944545c",
+         "node-cron": "1.1.x",
+         "slack-node": "0.1.x"
+      }
+}

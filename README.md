@@ -22,3 +22,10 @@ Please edit the config.json file to suit your needs:
 "cron" : "*/5 * * * *", // Cron syntax for how often the check should run
 }
 ```
+
+# Usage
+```
+node canary.js
+```
+
+Feel free to use whatever daemon you wish to keep the process running, I personally use ```forever```

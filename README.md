@@ -3,13 +3,15 @@ Simple bot that alerts users by slack channel when bandwidth exceeds a performan
 
 # Installation
 Assuming you are in root directory:
-```js
+```
 npm install
 cp config.example.json config.json
-``
+```
 
 # Configuration Options Example:
+Please edit the config.json file to suit your needs:
 ```js
+{
 "apiToken": "xoxb-95176950242-cI2MPysci1pZC4uWSvJxO7Pn", // APIToken used for Slack 
 "channel": "#interwebs", // Slack channel you wish to alert
 "warningPing": 300, // Max warning ping you would like to be alerted about
@@ -18,4 +20,5 @@ cp config.example.json config.json
 "timeout": 10,
 "host": "google.com", // Host to ping
 "cron" : "*/5 * * * *", // Cron syntax for how often the check should run
+}
 ```

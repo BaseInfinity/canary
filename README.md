@@ -29,3 +29,7 @@ node canary.js
 ```
 
 Feel free to use whatever daemon you wish to keep the process running, I personally use ```forever```
+
+# Example Output
+
+![image](https://d17oy1vhnax1f7.cloudfront.net/items/22320c2c0u2f0J1y432Z/Screen%20Shot%202017-01-24%20at%201.40.39%20AM.png?v=881cc137)

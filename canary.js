@@ -11,12 +11,9 @@ var options = {
    extra: ["-i 2"]
 };
 
-probe(config.host);
-
-// cron.schedule(config.cron, function(){
-//    console.log('running task');
-//    probe(config.host);
-// });
+cron.schedule(config.cron, function(){
+   probe(config.host);
+});
 
 function probe(host) {
    ping.promise.probe(host, options).then(function (res) {
@@ -41,15 +38,14 @@ function probe(host) {
             "\nmin: " + res.min + ' m/s' +
             "\nstddev: " + res.stddev + ' m/s';
 
-        console.log(message);
 
-         // slack.api('chat.postMessage', {
-         //    text: message,
-         //    channel: config.channel
-         // }, function(err, response) {
-         //    if (err) console.log(err);
-         //    console.log(response);
-         // });
+         slack.api('chat.postMessage', {
+            text: message,
+            channel: config.channel
+         }, function(err, response) {
+            if (err) console.log(err);
+            console.log(response);
+         });
       }
 
       console.log(res);
